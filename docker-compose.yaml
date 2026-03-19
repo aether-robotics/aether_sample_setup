@@ -1,0 +1,12 @@
+name: demo-app
+services:
+  aether-test:
+    image: dkhoanguyen/aether_base:latest
+    container_name: aether-test
+    privileged: true
+    network_mode: host
+    pid: host
+    restart: always
+    labels:
+      com.centurylinklabs.watchtower.enable: "true"
+    command: ["python3", "/opt/aether/sample.py", "1000"]

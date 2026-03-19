@@ -8,4 +8,4 @@ docker run  -d \
             --restart=always \
             --name aether-test \
             dkhoanguyen/aether_base:latest \
-            bash -c "while true; do sleep 1; done"
+            python3 /opt/aether/sample.py
